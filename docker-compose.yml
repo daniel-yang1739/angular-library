@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./angular-library:/angular-library
+    ports:
+      - "8422:8000"
+    command: bash
